@@ -1,0 +1,319 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="sript.js" defer></script>
+    <title>Instrumental-piano</title>
+    <style>
+        *, *::before, *::after {
+  box-sizing: border-box;
+}  #free{
+              padding: 20px;
+              text-align:center;
+              background: #abbd08;
+              color: white;
+          }
+      
+          .navbar{
+              overflow: hidden;
+              background-color: white;
+          }
+          .navbar a{
+              float: left;
+              display: bolck;
+              color:black;
+              text-align: left;
+              padding: 20px;
+              text text-decoxcvration: none;
+      }
+          .navbar a.right{
+              float: right;
+          }
+          .navbar a:hover{
+              background-color: #ddd;
+              color: white;
+          }
+
+body {
+  background-color: #070707;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.piano {
+  display: flex;
+  text-align: left;
+}
+
+.key {
+  height: calc(var(--width) * 4);
+  width: var(--width);
+}
+
+.white {
+  --width: 100px;
+  background-color: white;
+  border: 1px solid #333;
+}
+
+.white.active {
+  background-color: #f2eeee;
+}
+
+.black {
+  --width: 60px;
+  background-color: black;
+  margin-left: calc(var(--width) / -2);
+  margin-right: calc(var(--width) / -2);
+  z-index: 2;
+}
+
+.black.active {
+  background-color: #242525;
+}
+    </style>
+</head>
+
+
+<h1 id="free">PIANO</h1>
+<body> -->
+     <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Instruments</title>
+    <meta charset="UTF-8">
+        <script src="sript.js" defer></script>
+
+    <meta name="viewport" content="witdh-device-width,intinal-scale=1">
+    <style>
+      #id22{
+        color: yellow;
+        color: white;
+        color: black;
+        background-color: white;
+      }
+      body {
+        font-family:Times new roman;
+        margin:20px;
+      }
+      .header{
+        padding: 50px;
+        text-align: center;
+        background: black;
+        color: white;
+      }
+      .header h1{
+        font-size: 40px;
+      }
+      .navbar{
+        overflow: hidden;
+        background-color: white;
+      }
+      .navbar a{
+        float: left;
+        display: bolck;
+        color:black;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none!important;
+      }
+      .navbar a.right{
+        float: right;
+      }
+      .navbar a:hover{
+        background-color: #ddd;
+/*        color: white;*/
+      }
+      audio {
+        display: none;
+      }
+      body {
+        background-color: rgb(255, 255, 255);
+      }
+
+      button {
+        height: 110px;
+        width: 110px;
+        color: rgb(1,121,111);
+        padding: 5px;
+        margin: 70px;
+        background: rgb(230,230,250);
+      }
+
+      #top-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h1 {
+        font-size: 60px;
+      }
+
+      #left-image {
+        width: 200px;
+      }
+      #right-image {
+        width: 100px;
+      }
+       *, *::before, *::after {
+  box-sizing: border-box;
+}  #free{
+              padding: 20px;
+              text-align:center;
+              background: #abbd08;
+              color: white;
+          }
+      
+          .navbar{
+              overflow: hidden;
+              background-color: white;
+          }
+          .navbar a{
+              float: left;
+              display: bolck;
+              color:black;
+              text-align: left;
+              padding: 20px;
+              text text-decoxcvration: none;
+      }
+          .navbar a.right{
+              float: right;
+          }
+          .navbar a:hover{
+              background-color: #ddd;
+              color: white;
+          }
+
+body /*{
+  background-color: #070707;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
+
+.piano {
+  margin: 20px;
+  display: flex;
+  text-align: left;
+}
+
+.key {
+  height: calc(var(--width) * 4);
+  width: var(--width);
+}
+
+.white {
+  --width: 100px;
+  background-color: white;
+  border: 1px solid #333;
+}
+
+.white.active {
+  background-color: #f2eeee;
+}
+
+.black {
+  --width: 60px;
+  background-color: black;
+  margin-left: calc(var(--width) / -2);
+  margin-right: calc(var(--width) / -2);
+  z-index: 2;
+}
+
+.black.active {
+  background-color: #242525;
+}
+    </style>
+    </head>
+    <body>
+      <div class="header">
+      <h1> Welcome to the Instrumental web </h1>
+      <p>Instruments are given below</p>
+      <div class="navbar">
+        <a href="home page.html">
+          Home
+        </a>
+      <a href="guitar.html">
+      Guitar 
+    </a>
+    <a href="piano.html">
+      Piano
+    </a>
+    <a href="ukelele.html">
+       Ukulele
+     </a>
+    <a href="drums.html">
+      Drum
+    </a>
+    </div>
+  </div>
+    <div class="piano">
+        <div data-note="C" class="key white"></div>
+        <div data-note="Db" class="key black"></div>
+        <div data-note="D" class="key white"></div>
+        <div data-note="Eb" class="key black"></div>
+        <div data-note="E" class="key white"></div>
+        <div data-note="F" class="key white"></div>
+        <div data-note="Gb" class="key black"></div>
+        <div data-note="G" class="key white"></div>
+        <div data-note="Ab" class="key black"></div>
+        <div data-note="A" class="key white"></div>
+        <div data-note="Bb" class="key black"></div>
+        <div data-note="B" class="key white"></div>
+      </div>
+      <audio id="C" src="notes/q.mp3">
+        <source>
+      </audio>
+      <audio id="Db" src="notes/f.mp3"></audio>
+      <audio id="D" src="notes/b.mp3"></audio>
+      <audio id="Eb" src="notes/t.mp3"></audio>
+      <audio id="E" src="notes/q.mp3"></audio>
+      <audio id="F" src="notes/i.mp3"></audio>
+      <audio id="Gb" src="notes/d.mp3"></audio>
+      <audio id="G" src="notes/x.mp3"></audio>
+      <audio id="Ab" src="notes/c.mp3"></audio>
+      <audio id="A" src="notes/r.mp3"></audio>
+      <audio id="Bb" src="notes/a.mp3"></audio>
+      <audio id="B" src="notes/v.mp3"></audio>
+
+      <script>const WHITE_KEYS = ['z', 'x', 'c', 'v', 'b', 'n', 'm']
+        const BLACK_KEYS = ['s', 'd', 'g', 'h', 'j']
+        
+        const keys = document.querySelectorAll('.key')
+        const whiteKeys = document.querySelectorAll('.key.white')
+        const blackKeys = document.querySelectorAll('.key.black')
+        
+        keys.forEach(key => {
+          key.addEventListener('click', () => playNote(key))
+        })
+        
+        document.addEventListener('keydown', e => {
+          if (e.repeat) return
+          const key = e.key
+          const whiteKeyIndex = WHITE_KEYS.indexOf(key)
+          const blackKeyIndex = BLACK_KEYS.indexOf(key)
+        
+          if (whiteKeyIndex > -1) playNote(whiteKeys[whiteKeyIndex])
+          if (blackKeyIndex > -1) playNote(blackKeys[blackKeyIndex])
+        })
+        
+        function playNote(key) {
+          const noteAudio = document.getElementById(key.dataset.note)
+          noteAudio.currentTime = 0
+          noteAudio.play()
+          key.classList.add('active')
+          noteAudio.addEventListener('ended', () => {
+            key.classList.remove('active')
+          })
+        }</script>
+    
+    
+</body>
+</html>

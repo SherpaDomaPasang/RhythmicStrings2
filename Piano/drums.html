@@ -1,0 +1,174 @@
+   <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Instruments</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="witdh-device-width,intinal-scale=1">
+    <style>
+      #id22{
+        color: yellow;
+        color: white;
+        color: black;
+        background-color: white;
+      }
+      body {
+        font-family:Times new roman;
+        margin:20px;
+      }
+      .header{
+        padding: 50px;
+        text-align: center;
+        background: black;
+        color: white;
+      }
+      .header h1{
+        font-size: 40px;
+      }
+      .navbar{
+        overflow: hidden;
+        background-color: white;
+      }
+      .navbar a{
+        float: left;
+        display: bolck;
+        color:black;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none!important;
+      }
+      .navbar a.right{
+        float: right;
+      }
+      .navbar a:hover{
+        background-color: #ddd;
+/*        color: white;*/
+      }
+      audio {
+        display: none;
+      }
+      body {
+        background-color: rgb(255, 255, 255);
+      }
+
+      button {
+        height: 110px;
+        width: 110px;
+        color: rgb(1,121,111);
+        padding: 5px;
+        margin: 70px;
+        background: rgb(230,230,250);
+      }
+
+      #top-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h1 {
+        font-size: 60px;
+      }
+
+      #left-image {
+        width: 200px;
+      }
+      #right-image {
+        width: 100px;
+      }
+    </style>
+    </head>
+    <body>
+      <div class="header">
+      <h1> Welcome to the Instrumental web </h1>
+      <p>Instruments are given below</p>
+      <div class="navbar">
+        <a href="home page.html">
+          Home
+        </a>
+      <a href="guitar.html">
+      Guitar 
+    </a>
+    <a href="piano.html">
+      Piano
+    </a>
+    <a href="ukelele.html">
+       Ukulele
+     </a>
+    <a href="drums.html">
+      Drum
+    </a>
+    </div>
+  </div>
+  <audio id="Audio1" controls>
+    <source src="notes\Bass-Drum-Hit-Level-6a-www.fesliyanstudios.com (1).mp3" type="audio/mp3">
+  </audio>
+
+  <audio id="Audio2" controls>
+    <source src="notes\Crash-Cymbal-Hit-C-www.fesliyanstudios.com.mp3" type="audio/mp3">
+  </audio>
+
+  <audio id="Audio3" controls>
+    <source src="notes\Hi-Hat-Open-Hit-A2-www.fesliyanstudios.com.mp3" type="audio/mp3">
+  </audio>
+
+  <audio id="Audio4" controls>
+    <source src="notes\Medium-Tom-Drum-Hit-Level-7B-www.fesliyanstudios.com.mp3" type="audio/mp3">
+  </audio>
+  <audio id="Audio5" controls>
+    <source src="notes\Snare-Drum-Hit-Level-6b-www.fesliyanstudios.com.mp3" type="audio/mp3">
+  </audio>
+  <button id="Button1"> Bass Drum-Z</button>
+  <button id="Button2"> Cymbal-X</button>
+  <button id="Button3"> Hit Hats-C</button>
+  <button id="Button4"> Tom-V</button>
+  <button id="Button5"> Snare-B</button>
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+    
+  var audio = document.getElementById("Audio1");
+  var playButton = document.getElementById("Button1");
+  playButton.addEventListener("click", function() {
+      audio.play();
+  });
+
+  var audio2 = document.getElementById("Audio2");
+  var playButton2 = document.getElementById("Button2");
+  playButton2.addEventListener("click", function() {
+      audio2.play();
+  });
+
+  var audio3 = document.getElementById("Audio3");  
+  var playButton3 = document.getElementById("Button3");
+  playButton3.addEventListener("click", function() {
+      audio3.play();
+  });
+
+  var audio4 = document.getElementById("Audio4");
+  var playButton4 = document.getElementById("Button4");
+  playButton4.addEventListener("click", function() {
+      audio4.play();
+  });
+
+  var audio5 = document.getElementById("Audio5");  
+  var playButton5 = document.getElementById("Button5");
+  playButton5.addEventListener("click", function() {
+      audio5.play();
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if(e.key=='Z'){
+      audio.play();
+    }else if(e.key=='X'){
+      audio2.play();
+    }else if(e.key=='C'){
+      audio3.play();
+    }else if(e.key=='V'){
+      audio4.play();
+    }if(e.key=='B'){
+      audio5.play();
+    }
+  });
+});
+</script>
+</body>
+</html>

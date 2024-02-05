@@ -1,0 +1,226 @@
+   <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Instruments</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="witdh-device-width,intinal-scale=1">
+    <style>
+      #id22{
+        color: yellow;
+        color: white;
+        color: black;
+        background-color: white;
+      }
+      body {
+        font-family:Times new roman;
+        margin:20px;
+      }
+      .header{
+        padding: 50px;
+        text-align: center;
+        background: black;
+        color: white;
+      }
+      .header h1{
+        font-size: 40px;
+      }
+      .navbar{
+        overflow: hidden;
+        background-color: white;
+      }
+      .navbar a{
+        float: left;
+        display: bolck;
+        color:black;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none!important;
+      }
+      .navbar a.right{
+        float: right;
+      }
+      .navbar a:hover{
+        background-color: #ddd;
+/*        color: white;*/
+      }
+      audio {
+        display: none;
+      }
+      body {
+        background-color: rgb(255, 255, 255);
+      }
+
+      button {
+        height: 110px;
+        width: 110px;
+        color: rgb(1,121,111);
+        padding: 5px;
+        margin: 70px;
+        background: rgb(230,230,250);
+      }
+
+      #top-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h1 {
+        font-size: 60px;
+      }
+
+      #left-image {
+        width: 200px;
+      }
+      #right-image {
+        width: 100px;
+      }
+    </style>
+    </head>
+    <body>
+      <div class="header">
+      <h1> Welcome to the Instrumental web </h1>
+      <p>Instruments are given below</p>
+      <div class="navbar">
+        <a href="home page.html">
+          Home
+        </a>
+      <a href="guitar.html">
+      Guitar 
+    </a>
+    <a href="piano.html">
+      Piano
+    </a>
+    <a href="ukelele.html">
+       Ukulele
+     </a>
+    <a href="drums.html">
+      Drum
+    </a>
+    </div>
+  </div>           
+ <img
+      align="left"
+      src="C:\Users\dell\Downloads\wawaw.jpeg"
+      alt="click here"
+      height="200px"
+      width="450px"
+      > 
+      <h1 id="head">Ukulele</h1> 
+
+  <audio id="myAudio" controls>
+    <source src="./songs/A-major.mp3" type="audio/mp3">
+  </audio>
+
+  <audio id="myAudio2" controls>
+    <source src="./songs/A-minor.mp3" type="audio/mp3">
+  </audio>
+
+  <audio id="myAudio3" controls>
+    <source src="./songs/B-major.mp3" type="audio/mp3">
+  </audio>
+
+  <audio id="myAudio4" controls>
+    <source src="./songs/B-minor.mp3" type="audio/mp3">
+  </audio>
+
+  <audio id="myAudio5" controls>
+    <source src="./songs/C-minor.mp3" type="audio/mp3">
+  </audio>
+
+  <audio id="myAudio6" controls>
+    <source src="./songs/C-major.mp3" type="audio/mp3">
+  </audio>
+
+  <audio id="myAudio7" controls>
+    <source src="./songs/D-minor.mp3" type="audio/mp3">
+  </audio>
+
+  <audio id="myAudio8" controls>
+    <source src="./songs/D-major.mp3" type="audio/mp3">
+  </audio>
+
+  <button id="playButton">  A-major</button>
+  <button id="playButton2"> A-minor</button>
+  <button id="playButton3"> B-major</button>
+  <button id="playButton4"> B-minor</button>
+  <button id="playButton5"> C-minor</button>
+  <button id="playButton6"> C-major</button>
+  <button id="playButton7"> D-minor</button>
+  <button id="playButton8"> D-major</button>
+   
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      
+      var audio = document.getElementById("myAudio");
+      var playButton = document.getElementById("playButton");
+      playButton.addEventListener("click", function() {
+          audio.play(audio);
+      });
+
+      var audio2 = document.getElementById("myAudio2");
+      var playButton2 = document.getElementById("playButton2");
+      playButton2.addEventListener("click", function() {
+          audio2.play(audio2);
+      });
+
+      var audio3 = document.getElementById("myAudio3");
+      var playButton3 = document.getElementById("playButton3");
+      playButton3.addEventListener("click", function() {
+          audio3.play(audio3);
+      });
+
+      var audio4 = document.getElementById("myAudio4");
+      var playButton4 = document.getElementById("playButton4");
+      playButton4.addEventListener("click", function() {
+          audio4.play(audio4);
+      });
+
+      var audio5 = document.getElementById("myAudio5");
+      var playButton5 = document.getElementById("playButton5");
+      playButton5.addEventListener("click", function() {
+          audio5.play(audio5);
+      });
+
+      var audio6 = document.getElementById("myAudio6");
+      var playButton6 = document.getElementById("playButton6");
+      playButton6.addEventListener("click", function() {
+          audio6.play(audio6);
+      });
+
+      var audio7 = document.getElementById("myAudio7");
+      var playButton7 = document.getElementById("playButton7");
+      playButton7.addEventListener("click", function() {
+          audio7.play(audio7);
+      });
+
+      var audio8 = document.getElementById("myAudio8");
+      var playButton8 = document.getElementById("playButton8");
+      playButton8.addEventListener("click", function() {
+          audio8.play(audio8);
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if(e.key == 'A') {
+          audio.play();
+        } else if(e.key == 'a') {
+          audio2.play();
+        } else if(e.key == 'B') {
+          audio3.play();
+        } else if(e.key == 'b') {
+          audio4.play();
+        } else if(e.key == 'C') {
+          audio5.play();
+        } else if(e.key == 'c') {
+          audio6.play();
+        } else if(e.key == 'D') {
+          audio7.play();
+        } else if(e.key == 'd') {
+          audio8.play();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
